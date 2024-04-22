@@ -36,7 +36,7 @@ struct LoginView: View {
                     .modifier(TextViewModifier())
                     
                     HStack{
-                        Image(systemName: "envelope")
+                        Image(systemName: "lock")
                             .fontWeight(.semibold)
                         
                         SecureField("Password", text: $password)
@@ -87,7 +87,8 @@ struct LoginView: View {
                     })
                     
                     NavigationLink{
-                        EmptyView()
+                        RegistrationView()
+                            .navigationBarBackButtonHidden(true)
                     }label: {
                         HStack{
                             Text("Don't have an account?")

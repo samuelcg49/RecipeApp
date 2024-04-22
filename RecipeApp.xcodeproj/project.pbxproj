@@ -10,6 +10,7 @@
 		7E0F61FC2BD6768100EC0553 /* RoundedColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F61FB2BD6768100EC0553 /* RoundedColorButton.swift */; };
 		7E0F61FE2BD677E900EC0553 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F61FD2BD677E900EC0553 /* LoginView.swift */; };
 		7E0F62002BD679BB00EC0553 /* TextViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F61FF2BD679BB00EC0553 /* TextViewModifier.swift */; };
+		7E0F62022BD67CAD00EC0553 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F62012BD67CAD00EC0553 /* RegistrationView.swift */; };
 		7EB4506F2BD674AC00AD4873 /* RecipeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB4506E2BD674AC00AD4873 /* RecipeAppApp.swift */; };
 		7EB450712BD674AC00AD4873 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB450702BD674AC00AD4873 /* ContentView.swift */; };
 		7EB450732BD674AD00AD4873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB450722BD674AD00AD4873 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		7E0F61FB2BD6768100EC0553 /* RoundedColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedColorButton.swift; sourceTree = "<group>"; };
 		7E0F61FD2BD677E900EC0553 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		7E0F61FF2BD679BB00EC0553 /* TextViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewModifier.swift; sourceTree = "<group>"; };
+		7E0F62012BD67CAD00EC0553 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		7EB4506B2BD674AC00AD4873 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB4506E2BD674AC00AD4873 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
 		7EB450702BD674AC00AD4873 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 				7EB4506E2BD674AC00AD4873 /* RecipeAppApp.swift */,
 				7EB450702BD674AC00AD4873 /* ContentView.swift */,
 				7E0F61FD2BD677E900EC0553 /* LoginView.swift */,
+				7E0F62012BD67CAD00EC0553 /* RegistrationView.swift */,
 				7E0F61FF2BD679BB00EC0553 /* TextViewModifier.swift */,
 				7E0F61FB2BD6768100EC0553 /* RoundedColorButton.swift */,
 				7EB450722BD674AD00AD4873 /* Assets.xcassets */,
@@ -149,6 +152,7 @@
 				7E0F62002BD679BB00EC0553 /* TextViewModifier.swift in Sources */,
 				7EB450712BD674AC00AD4873 /* ContentView.swift in Sources */,
 				7E0F61FC2BD6768100EC0553 /* RoundedColorButton.swift in Sources */,
+				7E0F62022BD67CAD00EC0553 /* RegistrationView.swift in Sources */,
 				7E0F61FE2BD677E900EC0553 /* LoginView.swift in Sources */,
 				7EB4506F2BD674AC00AD4873 /* RecipeAppApp.swift in Sources */,
 			);

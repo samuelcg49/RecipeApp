@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isPresented = false
+    
     var body: some View {
         VStack {
             Image("recipe")
@@ -29,7 +30,7 @@ struct ContentView: View {
             Spacer()
             
             Button{
-                //login
+                isPresented.toggle()
             }label: {
                 Text("Get started")
                     .modifier(RoundedColorButton(color: .green))
