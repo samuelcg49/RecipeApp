@@ -10,7 +10,7 @@ import SwiftUI
 struct RegistrationView: View {
     
     @StateObject var viewModel = RegistrationViewModel()
-    
+    @State private var isRecipeTabViewActive = false
     @State var isShowingPassword: Bool = false
     
     @Environment(\.dismiss) private var dismiss
@@ -118,8 +118,10 @@ struct RegistrationView: View {
                 //Login buttons
                 VStack(spacing: 16){
                     Button(action: {
-                        Task{
-                            try await viewModel.createUser()
+                        if isPasswordValid {
+                            Task{
+                                try await viewModel.createUser()
+                            }
                         }
                     }, label: {
                         Text("Sign Up")
@@ -146,6 +148,7 @@ struct RegistrationView: View {
                 }
             }
             .padding(.vertical, 50)
+            
         }
     }
 }

@@ -41,6 +41,10 @@
 		7E0F62422BD68BB600EC0553 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = 7E0F62412BD68BB600EC0553 /* FirebaseStorageCombine-Community */; };
 		7E0F62442BD68C7900EC0553 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F62432BD68C7900EC0553 /* AuthService.swift */; };
 		7E0F62462BD68D4300EC0553 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F62452BD68D4300EC0553 /* RegistrationViewModel.swift */; };
+		7E0F62482BD6931800EC0553 /* RecipeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F62472BD6931800EC0553 /* RecipeTabView.swift */; };
+		7E0F624B2BD6961A00EC0553 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F624A2BD6961A00EC0553 /* ContentViewModel.swift */; };
+		7E0F624F2BD6AD0500EC0553 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F624E2BD6AD0500EC0553 /* ProfileView.swift */; };
+		7E0F62512BD6B6BB00EC0553 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0F62502BD6B6BB00EC0553 /* LoginViewModel.swift */; };
 		7EB4506F2BD674AC00AD4873 /* RecipeAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB4506E2BD674AC00AD4873 /* RecipeAppApp.swift */; };
 		7EB450712BD674AC00AD4873 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EB450702BD674AC00AD4873 /* ContentView.swift */; };
 		7EB450732BD674AD00AD4873 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7EB450722BD674AD00AD4873 /* Assets.xcassets */; };
@@ -55,6 +59,10 @@
 		7E0F62032BD687B600EC0553 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7E0F62432BD68C7900EC0553 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		7E0F62452BD68D4300EC0553 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		7E0F62472BD6931800EC0553 /* RecipeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTabView.swift; sourceTree = "<group>"; };
+		7E0F624A2BD6961A00EC0553 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		7E0F624E2BD6AD0500EC0553 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		7E0F62502BD6B6BB00EC0553 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		7EB4506B2BD674AC00AD4873 /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EB4506E2BD674AC00AD4873 /* RecipeAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeAppApp.swift; sourceTree = "<group>"; };
 		7EB450702BD674AC00AD4873 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +115,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7E0F62492BD6961100EC0553 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				7E0F624A2BD6961A00EC0553 /* ContentViewModel.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
 		7EB450622BD674AC00AD4873 = {
 			isa = PBXGroup;
 			children = (
@@ -129,9 +145,13 @@
 			children = (
 				7EB4506E2BD674AC00AD4873 /* RecipeAppApp.swift */,
 				7EB450702BD674AC00AD4873 /* ContentView.swift */,
+				7E0F62502BD6B6BB00EC0553 /* LoginViewModel.swift */,
 				7E0F61FD2BD677E900EC0553 /* LoginView.swift */,
 				7E0F62012BD67CAD00EC0553 /* RegistrationView.swift */,
+				7E0F624E2BD6AD0500EC0553 /* ProfileView.swift */,
 				7E0F62432BD68C7900EC0553 /* AuthService.swift */,
+				7E0F62472BD6931800EC0553 /* RecipeTabView.swift */,
+				7E0F62492BD6961100EC0553 /* Root */,
 				7E0F62452BD68D4300EC0553 /* RegistrationViewModel.swift */,
 				7E0F61FF2BD679BB00EC0553 /* TextViewModifier.swift */,
 				7E0F61FB2BD6768100EC0553 /* RoundedColorButton.swift */,
@@ -257,9 +277,13 @@
 				7EB450712BD674AC00AD4873 /* ContentView.swift in Sources */,
 				7E0F61FC2BD6768100EC0553 /* RoundedColorButton.swift in Sources */,
 				7E0F62022BD67CAD00EC0553 /* RegistrationView.swift in Sources */,
+				7E0F624B2BD6961A00EC0553 /* ContentViewModel.swift in Sources */,
 				7E0F61FE2BD677E900EC0553 /* LoginView.swift in Sources */,
+				7E0F62482BD6931800EC0553 /* RecipeTabView.swift in Sources */,
 				7E0F62462BD68D4300EC0553 /* RegistrationViewModel.swift in Sources */,
+				7E0F62512BD6B6BB00EC0553 /* LoginViewModel.swift in Sources */,
 				7EB4506F2BD674AC00AD4873 /* RecipeAppApp.swift in Sources */,
+				7E0F624F2BD6AD0500EC0553 /* ProfileView.swift in Sources */,
 				7E0F62442BD68C7900EC0553 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

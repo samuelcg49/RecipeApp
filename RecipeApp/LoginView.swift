@@ -8,8 +8,9 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State private var email = ""
-    @State private var password = ""
+    @StateObject var viewModel = LoginViewModel()
+    
+    @State var isShowingPassword: Bool = false
     
     var body: some View {
         NavigationStack{
@@ -27,7 +28,7 @@ struct LoginView: View {
                         Image(systemName: "envelope")
                             .fontWeight(.semibold)
                         
-                        TextField("Email", text: $email)
+                        TextField("Email", text: $viewModel.email)
                             .font(.subheadline)
                             .padding(12)
                             .cornerRadius(12)
@@ -39,15 +40,22 @@ struct LoginView: View {
                         Image(systemName: "lock")
                             .fontWeight(.semibold)
                         
-                        SecureField("Password", text: $password)
-                            .font(.subheadline)
-                            .padding(12)
-                            .cornerRadius(12)
+                        if isShowingPassword {
+                            TextField("Password", text: $viewModel.password)
+                                .font(.subheadline)
+                                .padding(12)
+                                .cornerRadius(12)
+                        } else{
+                            SecureField("Password", text: $viewModel.password)
+                                .font(.subheadline)
+                                .padding(12)
+                                .cornerRadius(12)
+                        }
                         
                         Button{
-                            //Mostrar contraseña
+                            isShowingPassword.toggle()
                         }label: {
-                            Image(systemName: "eye")
+                            Image(systemName: isShowingPassword ? "eye.slash" : "eye")
                                 .foregroundColor(.gray)
                         }
                         
@@ -57,12 +65,14 @@ struct LoginView: View {
                     HStack{
                         Spacer()
                         
-                        Button{
-                            
-                        }label: {
+                        Button(action:{
+                            Task{
+                                try await viewModel.login()
+                            }
+                        }, label: {
                             Text("Forgot Password?")
                                 .foregroundStyle(.black)
-                        }
+                        })
                     }
                     .padding(.trailing, 24)
                 }
