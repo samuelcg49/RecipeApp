@@ -66,9 +66,7 @@ struct LoginView: View {
                         Spacer()
                         
                         Button(action:{
-                            Task{
-                                try await viewModel.login()
-                            }
+                                //Forgot password
                         }, label: {
                             Text("Forgot Password?")
                                 .foregroundStyle(.black)
@@ -80,7 +78,9 @@ struct LoginView: View {
                 //Login buttons
                 VStack(spacing: 16){
                     Button(action: {
-                        
+                        Task{
+                            try await viewModel.login()
+                        }
                     }, label: {
                         Text("Login")
                             .modifier(RoundedColorButton(color: .green))
